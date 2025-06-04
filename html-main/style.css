@@ -20,6 +20,7 @@ h1, h2, h3 {
     flex-direction: row;
     padding-bottom: 50px; /* Add some padding at the bottom */
     flex-wrap: nowrap;
+    min-height: 100vh;
 }
 
 .navbar {
@@ -64,8 +65,8 @@ h1, h2, h3 {
     justify-content: center;
     align-items: center;
     flex-grow: 1;
-    gap: 50px;
-    padding: 0 80px;
+    /* gap: 50px; */
+    padding: 10px 0px 30px 40px;
     flex-wrap: nowrap; /* Allow content to wrap on smaller screens */
     flex-direction: row;
 }
@@ -74,6 +75,12 @@ h1, h2, h3 {
     flex: 1;
     min-width: 400px; /* Minimum width for text block */
     max-width: 600px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 13.4px;
+    line-height: 171%;
+    letter-spacing: 0%;
+
 }
 
 .hero-text h1 {
@@ -143,6 +150,7 @@ h1, h2, h3 {
     background-color: #FFAE00; /* Orange background for this section */
     padding: 60px 80px;
     text-align: center;
+    min-height: 100vh;
 
 }
 
@@ -163,7 +171,7 @@ h1, h2, h3 {
 }
 
 .dish-card {
-    background-color: #FFB800;
+    background-color: #FFAE00;
     border-radius: 10px;
     padding: 25px;
     width: 280px;
@@ -195,16 +203,24 @@ h1, h2, h3 {
 
 .dish-card p {
     font-size: 0.95em;
-    color: #666;
+    color: #000;
     margin-bottom: 15px;
     flex-grow: 1; /* Allows paragraphs to take available space */
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 10.3px;
+    line-height: 13.39px;
+    letter-spacing: 0%;
+
 }
 
 .dish-card .price {
-    font-size: 1.1em;
-    font-weight: 600;
-    color: #e67e22; /* Darker orange for price */
-    margin-bottom: 20px;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 10.3px;
+    line-height: 18.53px;
+    letter-spacing: 0%;
+
 }
 
 .order-now-small {
@@ -223,7 +239,16 @@ h1, h2, h3 {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    .navbar, .hero-content, .special-dishes {
+
+    .hero-section {
+        padding-top: 10px;
+        padding-right: 0px;
+        padding-bottom: 20px;
+        padding-left: 40px;
+        min-height: 100vh;
+    }
+
+    .special-dishes {
         padding: 10px 20px;
     }
 
@@ -242,13 +267,14 @@ h1, h2, h3 {
 }
 
 @media (max-width: 768px) {
-    .navbar, .hero-content, .special-dishes {
+    .navbar, .special-dishes {
         padding: 15px 20px;
     }
 
     .hero-content {
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
+        padding: 15px 0px 15px 20px;
     }
 
     .hero-text {
@@ -315,6 +341,7 @@ h1, h2, h3 {
     background-color: #f8f8f8; /* Light grey background */
     padding: 60px 80px;
     text-align: center;
+    min-height: 100vh;
 }
 
 .testimonials-header {
@@ -397,6 +424,7 @@ h1, h2, h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
 
 .welcome-content {
@@ -406,7 +434,9 @@ h1, h2, h3 {
     max-width: 1200px; /* Max width for content alignment */
     width: 100%;
     gap: 0px;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    flex-wrap: nowrap; /* Allow wrapping on smaller screens */
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 .welcome-text {
@@ -419,16 +449,27 @@ h1, h2, h3 {
     font-size: 3.2em;
     margin-bottom: 20px;
     line-height: 1.2;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 29.52px;
+    line-height: 31.98px;
+    letter-spacing: 0%;
+
 }
 
 .welcome-text .highlight {
-    color: #e67e22; /* Highlight color for JV Restaurant */
+    color: #FFBB00; /* Highlight color for JV Restaurant */
 }
 
 .welcome-text p {
-    font-size: 0.9em;
     line-height: 1.6;
     color: #666;
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 12.79px;
+    line-height: 23.62px;
+    letter-spacing: 0%;
+
 }
 
 .text-and-spices {
@@ -511,7 +552,7 @@ h1, h2, h3 {
     }
 
     .welcome-content {
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
     }
 
@@ -519,6 +560,7 @@ h1, h2, h3 {
         min-width: unset;
         max-width: 100%;
         margin-bottom: 40px;
+        margin-top: 40px;
     }
 
     .welcome-text h1 {
@@ -539,7 +581,7 @@ h1, h2, h3 {
     }
 
     .spices-image {
-        width: 60%;
+        width: 75%;
     }
 
     .testimonials-header h2 {
